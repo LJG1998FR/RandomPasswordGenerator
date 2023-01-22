@@ -1,0 +1,25 @@
+#title{
+    margin-left:10px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 30%;
+    padding: 80px 10px;
+    margin: auto;
+}
+
+#randomPass {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#randomPassContainer {
+    display: flex;
+    flex-direction: column;
+}
