@@ -13,8 +13,21 @@
     <main id="main">
         <h2>Generate A New Password</h2>
         <div id="randomPassContainer">
-            <div id="randomPass">test123</div>
-            <button id="randomPassButton">Generate!</button>
+            <div id="passwordBox">
+                <div id="randomPass">test123</div>
+                <button id="copyToClipboard" onclick="copyToClipboard();">Copy To Clipboard</button>
+            </div>
+            <label for="password_length">Password Length:</label>
+            <input type="number" name="password_length" id="password_length" min="8" max="32" value="8">
+            <label for="min_number_amount">Minimum Number Amount:</label>
+            <input type="number" name="min_number_amount" id="min_number_amount" min="1" max="32" value="1">
+            <label for="min_lowercase_character_amount">Minimum Lowercase Character Amount:</label>
+            <input type="number" name="min_lowercase_character_amount" id="min_lowercase_character_amount" min="1" max="32" value="1">
+            <label for="min_uppercase_character_amount">Minimum Uppercase Character Amount:</label>
+            <input type="number" name="min_uppercase_character_amount" id="min_uppercase_character_amount" min="1" max="32" value="1">
+            <label for="min_special_character_amount">Minimum Special Character Amount:</label>
+            <input type="number" name="min_special_character_amount" id="min_special_character_amount" min="1" max="32" value="1">
+            <button id="randomPassButton" onclick="generateRandomPassword();">Generate!</button>
         </div>
     </main>
 </body>
